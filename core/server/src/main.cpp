@@ -38,7 +38,7 @@
 #include "ClientHandler.h"
 
 #if defined WIN32 || defined __APPLE__
-typedef void(__cdecl *sighandler_t)(int);
+typedef void(*sighandler_t)(int);
 #endif
 
 int help() {
